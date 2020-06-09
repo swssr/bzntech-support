@@ -36,6 +36,32 @@ details {
 summary {
   display: grid;
 }
+details > summary {
+  position: relative;
+  display: block;
+  list-style: none;
+  outline: none;
+}
+details summary::after {
+  content: "";
+  position: absolute;
+  right: 1rem;
+  top: 45%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: transparent;
+  border: 2px solid;
+  border-left: none;
+  border-top: none;
+  transform: rotate(45deg);
+  transition: all ease-out 500ms;
+}
+details[open] summary::after {
+  transform: rotate(-135deg);
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
 .nav {
   width: 100%;
   height: 12vh;
@@ -43,6 +69,7 @@ summary {
   align-items: center;
   padding: 0 var(--padding);
   justify-content: space-between;
+  padding-top: 2rem;
   &--top {
     position: fixed;
     top: 0;
@@ -52,9 +79,12 @@ summary {
     background-color: rgba(255, 255, 255, 0.062);
   }
   .logo {
-    width: 100px;
-    height: 2rem;
-    background-color: green;
+    width: 120px;
+    height: 3rem;
+    background-image: url(https://res.cloudinary.com/swssr/image/upload/v1585319508/bzntech/ljdcwydevdajjguuqkjc.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .nav__links {
     display: flex;
