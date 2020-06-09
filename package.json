@@ -1,0 +1,23 @@
+{
+  "name": "bzntech-support",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swssr/bzntech-support.git"
+  },
+  "keywords": [],
+  "author": "Simo Ngquseka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swssr/bzntech-support/issues"
+  },
+  "homepage": "https://github.com/swssr/bzntech-support#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
